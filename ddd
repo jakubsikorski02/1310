@@ -1,1 +1,95 @@
-dddd
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+//1 ZADANIE
+/*int main(void) {
+
+	long double a;
+
+	while (1)
+	{
+		printf("Podaj a:");
+		fseek(stdin, 0, SEEK_END);
+		if (scanf_s("%Lg", &a) == 1)break;
+		else printf("Błąd wprowadzania \n Spróbuj ponownie \n");
+	}
+
+
+	long double b;
+	while (1)
+	{
+		printf("Podaj b:");
+		fseek(stdin, 0, SEEK_END);
+		if (scanf_s("%Lg", &b) == 1)break;
+		else printf("Błąd wprowadzania \n Spróbuj ponownie \n");
+	}
+
+
+	long double licznik, mianownik;
+	licznik = (a * a) + b;
+	mianownik = ((a*a)+(2*a*b)+(b*b));
+	long double wynik = licznik / mianownik;
+	if (isfinite(wynik))wprintf(L"licznik/mianownik=%Lg\n", wynik);
+	else fwprintf(stderr, L"Obliczenia niewykonalne!\n");
+}
+*/
+
+//2 ZADANIE
+
+/*unsigned long long nwd(unsigned long long a, unsigned long long b) {
+	while (b != 0) {
+		while (a >= b){
+			a -= b;
+		}
+		unsigned long long temp = b;
+		b = a;
+		a = temp;
+	}
+	return a;
+}
+int main(void) {
+
+
+
+	unsigned long long num1;
+
+	while (1)
+	{
+		printf("Podaj pierwszą liczbę:");
+		fseek(stdin, 0, SEEK_END);
+		if (scanf_s("%llu", &num1) == 1) {
+			if (num1 != 0) {
+				break;
+			}
+			else {
+				printf("Liczba nie może być zerem \n Spróbuj ponownie \n");
+			}
+		}
+		else printf("Błąd wprowadzania \n Spróbuj ponownie \n");
+	}
+
+	unsigned long long num2;
+
+
+	while (1)
+	{
+		printf("Podaj drugą liczbę:");
+		fseek(stdin, 0, SEEK_END);
+		if (scanf_s("%llu", &num2) == 1) {
+			if (num2 != 0) {
+				break;
+			}
+			else {
+				printf("Liczba nie może być zerem \n Spróbuj ponownie \n");
+			}
+		}
+		else printf("Błąd wprowadzania \n Spróbuj ponownie \n");
+	}
+	unsigned long long wynik = nwd(num1, num2);
+	printf("A: %llu, B: %llu, Wynik: %llu", num1, num2, wynik);
+}
+*/
+
+//ZADANIE 3
